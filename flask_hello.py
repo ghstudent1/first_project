@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World! test build works!!!!"
+    return "Hello World! test build works using pipeline!!!!"
 
 if __name__ == "__main__":
     app.run()
