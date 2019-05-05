@@ -14,7 +14,7 @@ pipeline {
                     ls -l /bin/sh
                     source ./venv/bin/activate
                     pip install -r ./requirement.txt
-                    ./venv/bin/python3.6 ./flask_hello.py >> ./flask.log 2>&1 
+                    BUILD_ID=dontKillMe ./venv/bin/python3.6 ./flask_hello.py >> ./flask.log 2>&1 &
 
                     """
             }
